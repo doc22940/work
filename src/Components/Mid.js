@@ -8,10 +8,7 @@ const Mid = () => {
                 <div id="mid_profile" className="sections_profile inner_conainer_profile "> 
                               
 
-                <div className="texts_mid_profile">Projects</div>
-                <div className="texts_mid_profile">|</div>
-                <div className="texts_mid_profile">Articles</div>
-
+                      More projects are currently being uploaded
 
           </div>
 
