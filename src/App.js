@@ -3,6 +3,7 @@ import './App.css';
 import Upper from './Components/Upper';
 import Mid from './Components/Mid';
 import Lower from './Components/Lower';
+import SpeedDialTooltipOpen from './ExternalComponents/SpeedDialTooltipOpen';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
 
 
 <Lower/>
+
+
+<SpeedDialTooltipOpen />
 
 
 
