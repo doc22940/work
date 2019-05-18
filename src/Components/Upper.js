@@ -8,6 +8,8 @@ const Upper = () => {
 
             <div id="upper_profile">
             <div id="bg-bg"></div>
+            <div id="bg-bg2"></div>
+            <div id="bg-bg3"></div>
 
                   {/*
 
@@ -33,12 +35,17 @@ const Upper = () => {
 
                   <div className="module-border-wrap float_item_profile">
                         
-                        <button className="module" >
 
-                        <a download download="foo.txt" target="_blank" href="https://www.gravatar.com/avatar/281c2df7dbce9284dca6059db944f8df?s=48&d=identicon&r=PG"> CV</a>
+                        <a id="cv_link" target="_blank" href="https://drive.google.com/file/d/1m7lDK0hlm5TvM0LXbigdfF4c8cyJMGmY/view?usp=sharing">
 
 
-                        </button>
+                        <button className="module" >CV</button>
+
+
+                        </a>
+
+
+                     
 
                   
                   </div>
@@ -46,7 +53,7 @@ const Upper = () => {
 
                   <div id="description_profilepage" className="float_item_profile" >
                         
-                        Front-end Developer @erabia: React, Redux, Node,  
+                        Front-end Developer @erabia: React, Redux, Node. Based in Jordan
 
                   </div>
 
