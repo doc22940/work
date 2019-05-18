@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/work/static/css/main.034cb5b5.chunk.css",
+    "main.css": "/work/static/css/main.ded93103.chunk.css",
     "main.js": "/work/static/js/main.b5dd5d46.chunk.js",
     "main.js.map": "/work/static/js/main.b5dd5d46.chunk.js.map",
     "runtime~main.js": "/work/static/js/runtime~main.84d4238b.js",
@@ -8,9 +8,9 @@
     "static/js/2.00afec89.chunk.js": "/work/static/js/2.00afec89.chunk.js",
     "static/js/2.00afec89.chunk.js.map": "/work/static/js/2.00afec89.chunk.js.map",
     "index.html": "/work/index.html",
-    "precache-manifest.90ba6df3b74e5f5d189c385fc412608e.js": "/work/precache-manifest.90ba6df3b74e5f5d189c385fc412608e.js",
+    "precache-manifest.b7c98036a88e51d4b761419775c6b577.js": "/work/precache-manifest.b7c98036a88e51d4b761419775c6b577.js",
     "service-worker.js": "/work/service-worker.js",
-    "static/css/main.034cb5b5.chunk.css.map": "/work/static/css/main.034cb5b5.chunk.css.map",
+    "static/css/main.ded93103.chunk.css.map": "/work/static/css/main.ded93103.chunk.css.map",
     "static/media/App.css": "/work/static/media/snap.a80fde2e.png"
   }
 }
