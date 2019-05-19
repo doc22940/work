@@ -759,6 +759,11 @@ clip-path: circle(41.6% at 58% 64%);
   width:100%
 }
 
+.jss3{
+
+  position: fixed !important
+}
+
 /* #fab_button{
 
   height: 50px;
