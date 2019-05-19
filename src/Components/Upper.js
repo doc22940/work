@@ -7,9 +7,14 @@ const Upper = () => {
 
 
             <div id="upper_profile">
-            <div id="bg-bg"></div>
+
+              {/*
+                        <div id="bg-bg"></div>
             <div id="bg-bg2"></div>
             <div id="bg-bg3"></div>
+            
+            */}    
+
 
                   {/*
 
