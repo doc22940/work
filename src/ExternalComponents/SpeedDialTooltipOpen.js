@@ -13,12 +13,15 @@ import DeleteIcon from '@material-ui/icons/Delete';
 
 const styles = theme => ({
   root: {
-    height: 380,
+    height: 0,
+    background:"black"
   },
   speedDial: {
     position: 'fixed',
     bottom: theme.spacing.unit * 2,
     right: theme.spacing.unit * 3,
+
+
   },
 });
 
@@ -69,7 +72,7 @@ class SpeedDialTooltipOpen extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Button onClick={this.handleVisibility}>Toggle Speed Dial</Button>
+      { /* <Button onClick={this.handleVisibility}>Toggle Speed Dial</Button> */}
         <SpeedDial
           ariaLabel="SpeedDial tooltip example"
           className={classes.speedDial}
@@ -81,7 +84,8 @@ class SpeedDialTooltipOpen extends React.Component {
           onFocus={this.handleOpen}
           onMouseEnter={this.handleOpen}
           onMouseLeave={this.handleClose}
-          open={open}
+          open={open} 
+        
         >
           {actions.map(action => (
             <SpeedDialAction
@@ -90,6 +94,7 @@ class SpeedDialTooltipOpen extends React.Component {
               tooltipTitle={action.name}
               tooltipOpen
               onClick={this.handleClick}
+              
             />
           ))}
         </SpeedDial>

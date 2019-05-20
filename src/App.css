@@ -742,10 +742,7 @@ clip-path: circle(41.6% at 58% 64%);
     margin-bottom: 15px;
   }
 
-  .jss9 {
-    color: #303 !important;
-    background-color: #fff !important;
-}
+
 
 .jss57{
 
@@ -774,3 +771,8 @@ clip-path: circle(41.6% at 58% 64%);
 
 } */
 
+
+a span span{
+
+  color :black
+}

@@ -30,6 +30,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
+ 
   },
 });
 
@@ -48,9 +49,9 @@ class NavTabs extends React.Component {
 
     return (
       <NoSsr>
-        <div className={classes.root}>
-          <AppBar position="static">
-            <Tabs variant="fullWidth" value={value} onChange={this.handleChange}>
+        <div className={classes.root} style={{ color:"black"}}>
+          <AppBar position="static"  style={{background:"white"}}>
+            <Tabs variant="fullWidth" value={value} onChange={this.handleChange} >
               <LinkTab label="Projects" href="page1" />
               <LinkTab label="Articles" href="page2" />
               <LinkTab label="Code Snippets" href="page3" />
@@ -59,7 +60,7 @@ class NavTabs extends React.Component {
 
           {value === 0 && 
           
-          <TabContainer>
+          <TabContainer style={{ color:"black"}} >
 
                 <Projects/>
 
