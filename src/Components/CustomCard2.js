@@ -8,7 +8,7 @@ const CustomCard2 = (props) => {
 
                         <img src={props.article.image}/>
 
-                         <h1>
+                         <h1 className="article_title">
                                 {props.article.title}
                         </h1>
 

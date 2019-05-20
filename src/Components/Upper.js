@@ -44,7 +44,7 @@ const Upper = () => {
                         <a id="cv_link" target="_blank" href="https://drive.google.com/file/d/1m7lDK0hlm5TvM0LXbigdfF4c8cyJMGmY/view?usp=sharing">
 
 
-                        <button className="module" >resume</button>
+                        <button className="module" >CV</button>
 
 
                         </a>

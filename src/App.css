@@ -645,6 +645,7 @@ clip-path: circle(41.6% at 58% 64%);
     padding: 5px;
     margin: 5px;
     font-family: Raleway;
+    line-height: 40px;
     font-weight: lighter;
     background: -webkit-linear-gradient(74deg, rgba(0, 90, 41, 0.61) 0%, rgb(199, 103, 255) 100%) ;
     -webkit-background-clip: text;
@@ -775,4 +776,22 @@ clip-path: circle(41.6% at 58% 64%);
 a span span{
 
   color :black
+}
+
+.speed_action a{
+
+background: green;
+height: 200%
+
+}
+
+.custom_card2{
+
+
+  padding: 0px
+}
+
+.custom_card2 img{
+
+width: 100%
 }

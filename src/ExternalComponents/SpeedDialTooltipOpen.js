@@ -9,28 +9,41 @@ import FileCopyIcon from '@material-ui/icons/FileCopyOutlined';
 import SaveIcon from '@material-ui/icons/Save';
 import PrintIcon from '@material-ui/icons/Print';
 import ShareIcon from '@material-ui/icons/Share';
-import DeleteIcon from '@material-ui/icons/Delete';
+import PhoneIcon from '@material-ui/icons/Phone';
+import ALarmIcon from '@material-ui/icons/Alarm';
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedImage from '../assets/linkedin.png';
+import IGImage from '../assets/igimg.png';
+import Link from '../assets/link.png';
+import IG from '../assets/ig2.png';
+import Wapp from '../assets/wapp.png';
+import Mail from '../assets/mail.png';
+import Seven from '../assets/seven.png';
+
+
 
 const styles = theme => ({
   root: {
     height: 0,
-    background:"black"
+
   },
   speedDial: {
     position: 'fixed',
     bottom: theme.spacing.unit * 2,
     right: theme.spacing.unit * 3,
+   
+    
 
 
   },
 });
 
+
 const actions = [
-  { icon: <FileCopyIcon />, name: 'Copy' },
-  { icon: <SaveIcon />, name: 'Save' },
-  { icon: <PrintIcon />, name: 'Print' },
-  { icon: <ShareIcon />, name: 'Share' },
-  { icon: <DeleteIcon />, name: 'Delete' },
+  { icon: <a target="_blank" href="https://www.linkedin.com/in/ammarhalees/"> <img src={Link} /> </a>, name: 'LinkedIn' },
+  { icon: <a target="_blank" href="https://github.com/AmmarHalees"><img src="https://cdn3.iconfinder.com/data/icons/social-icons-24/24/Github-512.png"/></a>, name: 'GitHub' },
+  { icon: <a target="_blank" href="https://www.instagram.com/ammarhalees"><img src={IG}/></a>, name: 'Instagram' },
+  { icon: <a ><img src={Seven}/></a>, name: '+962 7909 44 687' },
 ];
 
 class SpeedDialTooltipOpen extends React.Component {
@@ -71,13 +84,13 @@ class SpeedDialTooltipOpen extends React.Component {
     const { hidden, open } = this.state;
 
     return (
-      <div className={classes.root}>
+      <div className={classes.root} >
       { /* <Button onClick={this.handleVisibility}>Toggle Speed Dial</Button> */}
         <SpeedDial
           ariaLabel="SpeedDial tooltip example"
           className={classes.speedDial}
           hidden={hidden}
-          icon={<SpeedDialIcon />}
+          icon={<SpeedDialIcon className="speed_action" />}
           onBlur={this.handleClose}
           onClick={this.handleClick}
           onClose={this.handleClose}
@@ -89,11 +102,14 @@ class SpeedDialTooltipOpen extends React.Component {
         >
           {actions.map(action => (
             <SpeedDialAction
+            
               key={action.name}
               icon={action.icon}
               tooltipTitle={action.name}
               tooltipOpen
               onClick={this.handleClick}
+
+
               
             />
           ))}
