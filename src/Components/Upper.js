@@ -7,6 +7,7 @@ const Upper = () => {
 
 
             <div id="upper_profile">
+<input type="checkbox" id="switch" /><label for="switch">Toggle</label>
 
               {/*
                         <div id="bg-bg"></div>
@@ -63,6 +64,8 @@ const Upper = () => {
                   </div>
 
             </div>
+
+            
 
       </div>
 

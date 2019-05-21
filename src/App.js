@@ -8,9 +8,13 @@ import SpeedDialTooltipOpen from './ExternalComponents/SpeedDialTooltipOpen';
 function App() {
   return (
     <div className="container">
-   <div id="bg-bg"></div>
+  {/* <div id="bg-bg"></div>
             <div id="bg-bg2"></div>
-            <div id="bg-bg3"></div>
+  <div id="bg-bg3"></div>*/}
+
+
+
+
 
 <Upper/>
 

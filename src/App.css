@@ -659,6 +659,16 @@ clip-path: circle(41.6% at 58% 64%);
     font-weight: lighter;
     margin-top: 22px
   }
+  .custom_card h3{
+
+    width: 80%;
+    margin: auto;
+    margin-top:5px;
+
+
+  }
+
+
   .custom_card img,.custom_card2 img{
 
     width: 300px;
@@ -699,7 +709,9 @@ clip-path: circle(41.6% at 58% 64%);
 
   #bot_links{
 
-    color: #a00a7d;;
+    background: -webkit-linear-gradient(74deg, rgba(35, 0, 90, 0.692) 0%, rgba(255, 103, 136, 0.664) 100%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     font-weight: normal;
 
@@ -712,6 +724,10 @@ clip-path: circle(41.6% at 58% 64%);
   #bot_links:hover{
 
   cursor: pointer;
+
+  background: -webkit-linear-gradient(74deg, rgb(0, 50, 63) 0%, rgba(218, 3, 50, 0.918) 100%) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   }
 
@@ -745,22 +761,13 @@ clip-path: circle(41.6% at 58% 64%);
 
 
 
-.jss57{
-
-  color: #303 !important;
-
-
-}
 
 #cv_link{
 
   width:100%
 }
 
-.jss3{
 
-  position: fixed !important
-}
 
 /* #fab_button{
 
@@ -802,9 +809,74 @@ height:auto
 
 }
 
-#bot_links{
 
-     background: -webkit-linear-gradient(74deg, rgba(35, 0, 90, 0.5) 0%, rgba(255, 103, 136, 0.493) 100%) ;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+#bg-bgx{
+
+  width: 100%;
+  height: 50%;
+  background-image:  url('https://cdn.vox-cdn.com/thumbor/ZfJbgspIjfP_XwkbNeJLmvbPgm4=/100x0:1180x720/1200x800/filters:focal(100x0:1180x720)/cdn.vox-cdn.com/uploads/chorus_image/image/30242981/firewatch_game.0.jpg');
+  background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+object-fit: cover;
+
+
+
+-webkit-filter:brightness(50%);
+filter:brightness(50%);
+
+   
+position: absolute;
+z-index: -10000000
 }
+
+
+/*----------( TOGGLE SWITCH)-----------*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+  position: relative;
+  margin-top: 0px;
+
+  left: 10px;
+  top:0px
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+  width: 15px;
+  height: 15px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #0b0025;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 30px;
+}
+
+
+/*--------------------------------------*/

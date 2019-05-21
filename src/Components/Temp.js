@@ -1,85 +1,73 @@
 import React from 'react';
-import OutlinedChips from '../ExternalComponents/OutlinedChips';
-
-import heart from '../assets/heart.png';
-import ChipsArray from '../ExternalComponents/ChipsArray';
-
-const Lower = () => {
-      return (
-
-<div id="lower_profile"  >
 
 
 
-      <div id="first_proj" class="col col--3x">
+const Upper = () => {
+        return ( 
 
-            <div class="my_overlay"> 
 
-                  <div className="textandstuff">
-                                    <h2 className="titles">React Shopping Cart</h2>
+            <div id="upper_profile">
 
-                  <h4 >
+              {/*
+                        <div id="bg-bg"></div>
+            <div id="bg-bg2"></div>
+            <div id="bg-bg3"></div>
+            
+            */}    
 
-                        <ChipsArray tech={["JavaScript", "ReactJS", "Material UI","Others" ]}/>
 
-                  </h4>
+                  {/*
 
-                  <div className="titles">
+                              <div id="header_area_profile">
 
-                         <span className="mylinks">
-                              <a target="_blank" href="https://github.com/AmmarHalees/reactshop">Source Code</a>
-                              
-                              / 
-                              
-                              <a target="_blank" href="https://ammarhalees.github.io/reactshop/">Demo</a>
-                              
-                        </span>
+                              <SpeedDialTooltipOpen/>
 
-                  </div>
+                              </div>
+
+                  */}
+
+
+
+
+            <div id="floating_profile" className="inner_conainer_profile">
+
+
+
+                  <div className="circle ">  </div>
+
+                  <div className="float_item_profile "> <h1 className="main_text">Ammar Halees</h1></div>
+                  <div className="float_item_profile "> <h3 className="secondary_text">Front-end Engineer</h3> </div>
+
+                  <div className="module-border-wrap float_item_profile">
+                        
+
+                        <a id="cv_link" target="_blank" href="https://drive.google.com/file/d/1m7lDK0hlm5TvM0LXbigdfF4c8cyJMGmY/view?usp=sharing">
+
+
+                        <button className="module" >CV</button>
+
+
+                        </a>
+
+
+                     
+
                   
                   </div>
 
+
+                  <div id="description_profilepage" className="float_item_profile" >
+                        
+                        Front-end Developer @erabia: React, Redux, Node. Based in Jordan
+
+                  </div>
 
             </div>
 
-
       </div>
 
-{/*------------Second Project------------ */}
 
-<div id="second_proj" class="col col--2x">
-
-<div class="my_overlay"> 
-
-      <h2 className="titles">Definitive Guide to JavaScript Arrays (Part I)</h2>
-
-      <h4 >
-
-            <ChipsArray tech={["JavaScript", "ES6", "Arrays","Sorting","Algorithms" ]}/>
-
-      </h4>
-
-      <div className="titles">
-
-             <span className="mylinks">
-                  <a target="_blank" href="https://medium.com/@haleesammar/definitive-guide-to-javascript-arrays-part-i-798e5e514927">Link to article</a>
-                  
-            </span>
-
-      </div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-</div>	
-
-      );
+         );
 }
  
-export default Lower;
+export default Upper;

@@ -16,17 +16,23 @@ const CustomCard = (props) => {
                         {props.project.description}
 
                         </h3>
-                        <div id="techused">
-                               
-                                        
-                                       
+                     
+                { /*            
+                            <div id="techused">               
+                        {props.project.techused.map(tech=>{
+
+                                return (<span className="tech_used">{tech}</span>)
+
+                        })}   
 
                         </div>
+                
+                */}
 
                         <div id="midlower_profile" class="sections_profile inner_conainer_profile "> 
                               
 
-                <div className="texts_mid_profile"><a target="_blank" id="bot_links" href={props.project.linktosource}>Source Code</a></div>
+                <div className="texts_mid_profile"><a target="_blank" id="bot_links" href={props.project.linktosource}>Code</a></div>
                 <div className="texts_mid_profile">|</div>
                 <div className="texts_mid_profile"><a target="_blank" id="bot_links" href={props.project.linktodemo}>Demo</a></div>
 
