@@ -23,12 +23,12 @@ const CustomCard2 = (props) => {
 
                         </div>
 
-                        <div id="midlower_profile" class="sections_profile inner_conainer_profile "> 
+                        <div id="midlower_profile_2" class="sections_profile inner_conainer_profile "> 
                               
 
- 
-                <div className="texts_mid_profile"><a target="_blank" id="bot_links" href={props.article.linktoarticle}>Link</a></div>
-
+ <div></div>
+                <div className="texts_mid_profile"><a target="_blank" id="bot_links" href={props.article.linktoarticle}>Link to Article</a></div>
+                <div></div>
 
           </div>
 

@@ -5,45 +5,81 @@ import Button from '@material-ui/core/Button';
 import SpeedDial from '@material-ui/lab/SpeedDial';
 import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
 import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
-import FileCopyIcon from '@material-ui/icons/FileCopyOutlined';
-import SaveIcon from '@material-ui/icons/Save';
-import PrintIcon from '@material-ui/icons/Print';
-import ShareIcon from '@material-ui/icons/Share';
-import PhoneIcon from '@material-ui/icons/Phone';
-import ALarmIcon from '@material-ui/icons/Alarm';
-import EmailIcon from '@material-ui/icons/Email';
-import LinkedImage from '../assets/linkedin.png';
-import IGImage from '../assets/igimg.png';
-import Link from '../assets/link.png';
-import IG from '../assets/ig2.png';
-import Wapp from '../assets/wapp.png';
-import Mail from '../assets/mail.png';
-import Seven from '../assets/seven.png';
 
+import Link from '../assets/link.png';
+import MD from '../assets/md.png';
+import NEWIG from '../assets/newig.png';
+
+import YT from '../assets/yt.png';
+import GH from '../assets/gh.png';
+
+import IN from '../assets/in.png';
+
+
+
+import classNames from 'classnames';
 
 
 const styles = theme => ({
   root: {
-    height: 0,
+  //  backgroundColor:'green',
+ 
 
   },
   speedDial: {
     position: 'fixed',
     bottom: theme.spacing.unit * 2,
-    right: theme.spacing.unit * 3,
+    right: theme.spacing.unit * 1,
    
     
 
 
   },
+
+
+
+  fab:{
+    background:' -webkit-linear-gradient(74deg, rgba(35, 0, 90, 0.5) 0%, rgba(255, 103, 136, 0.493) 100%)' ,
+
+  
+    boxShadow:'1px -7px 20px -1px  rgba(215, 55, 255, 0.2), 1px -15px 20px 8px rgba(144, 144, 144, 0.14), -1px -11px 20px 1px rgba(255, 196, 196, 0.12)'
+
+  }
+
+  ,
+
+  buttons:{
+
+    background:"white"
+
+  }
+,
+  popper:{
+
+  
+    color:"green",
+    background:"green"
+  }
+
+  ,tooltip:{
+
+    color:"green",
+    background:"green"
+
+
+  }
+
+
 });
 
 
 const actions = [
-  { icon: <a target="_blank" href="https://www.linkedin.com/in/ammarhalees/"> <img src={Link} /> </a>, name: 'LinkedIn' },
-  { icon: <a target="_blank" href="https://github.com/AmmarHalees"><img src="https://cdn3.iconfinder.com/data/icons/social-icons-24/24/Github-512.png"/></a>, name: 'GitHub' },
-  { icon: <a target="_blank" href="https://www.instagram.com/ammarhalees"><img src={IG}/></a>, name: 'Instagram' },
-  { icon: <a ><img src={Seven}/></a>, name: '+962 7909 44 687' },
+  { icon: <a target="_blank" href="https://www.linkedin.com/in/ammarhalees/"> <img src={IN} /> </a>, name: 'LinkedIn' },
+  { icon: <a target="_blank" href="https://github.com/AmmarHalees"><img src={GH}/></a>, name: 'GitHub' },
+  { icon: <a target="_blank" href="https://www.instagram.com/ammarhalees"><img src={NEWIG}/></a>, name: 'Instagram' },
+  { icon: <a target="_blank" href="https://medium.com/@haleesammar"><img src={MD}/></a>, name: 'Medium' },
+  { icon: <a target="_blank" href="https://www.youtube.com/channel/UCugfvz9Aoq00NahbwQTki8w?view_as=subscriber"><img src={YT}/></a>, name: 'YouTube' },
+
 ];
 
 class SpeedDialTooltipOpen extends React.Component {
@@ -84,13 +120,13 @@ class SpeedDialTooltipOpen extends React.Component {
     const { hidden, open } = this.state;
 
     return (
-      <div className={classes.root} >
+      <div >
       { /* <Button onClick={this.handleVisibility}>Toggle Speed Dial</Button> */}
         <SpeedDial
           ariaLabel="SpeedDial tooltip example"
-          className={classes.speedDial}
+          className={classNames(classes.speedDial) }
           hidden={hidden}
-          icon={<SpeedDialIcon className="speed_action" />}
+          icon={<SpeedDialIcon />}
           onBlur={this.handleClose}
           onClick={this.handleClick}
           onClose={this.handleClose}
@@ -98,6 +134,12 @@ class SpeedDialTooltipOpen extends React.Component {
           onMouseEnter={this.handleOpen}
           onMouseLeave={this.handleClose}
           open={open} 
+
+          classes={{
+            fab: classes.fab, // class name, e.g. `classes-nesting-root-x`
+       
+          }}
+          
         
         >
           {actions.map(action => (
@@ -106,9 +148,18 @@ class SpeedDialTooltipOpen extends React.Component {
               key={action.name}
               icon={action.icon}
               tooltipTitle={action.name}
-              tooltipOpen
               onClick={this.handleClick}
 
+
+              tooltipPlacement="right"
+              tooltipOpen={false}
+
+
+             TooltipClasses={classNames(classes.popper,classes.tooltip)}
+
+              classes={{
+                button: classes.buttons, // ONLY button and buttonClosed keys
+              }}
 
               
             />
