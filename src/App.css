@@ -782,7 +782,9 @@ clip-path: circle(41.6% at 58% 64%);
 
 a span span{
 
-  color :black
+  color :black;
+  font-family: 'Open Sans';
+  letter-spacing: 2px
 }
 
 
