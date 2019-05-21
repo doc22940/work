@@ -39,6 +39,12 @@ const Upper = () => {
                   <div className="float_item_profile "> <h1 className="main_text">Ammar Halees</h1></div>
                   <div className="float_item_profile "> <h3 className="secondary_text">Front-end Engineer</h3> </div>
 
+                  <div id="description_profilepage" className="float_item_profile" >
+                        
+                        Front-end Dev. @erabia <br/>React, Redux, Node. <br/> Based in Jordan
+
+                  </div>
+
                   <div className="module-border-wrap float_item_profile">
                         
 
@@ -57,11 +63,7 @@ const Upper = () => {
                   </div>
 
 
-                  <div id="description_profilepage" className="float_item_profile" >
-                        
-                        Front-end Developer @erabia: React, Redux, Node. Based in Jordan
-
-                  </div>
+    
 
             </div>
 

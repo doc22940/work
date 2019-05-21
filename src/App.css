@@ -216,6 +216,7 @@ clip-path: circle(41.6% at 58% 64%);
       #floating_profile{
         text-align: center; 
         margin-top: 8vh;
+        margin-bottom: 4vh
         
       }
       
@@ -262,10 +263,12 @@ clip-path: circle(41.6% at 58% 64%);
         z-index: 100000000;
         font-size: 1rem;
       }
+
       
       #description_profilepage{
       
-        font-size:0.8rem
+        font-size:0.8rem;
+        margin-bottom: 15px
       
       }
       
@@ -625,7 +628,8 @@ clip-path: circle(41.6% at 58% 64%);
     text-align: center;
     padding: 5px;
     margin: 5px;
-    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,.3);
+    /* box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,.3); */
+    box-shadow: 0rem 0.5rem 1rem rgba(130, 41, 41, 0.12);
     background-color: #fff;
     border-radius: 0.3rem;
     transition: all .2s ease-in-out;
@@ -644,7 +648,6 @@ clip-path: circle(41.6% at 58% 64%);
 
     padding: 5px;
     margin: 5px;
-    font-family: Raleway;
     line-height: 40px;
     font-weight: lighter;
     background: -webkit-linear-gradient(74deg, rgba(0, 90, 41, 0.61) 0%, rgb(199, 103, 255) 100%) ;
@@ -765,6 +768,12 @@ clip-path: circle(41.6% at 58% 64%);
 #cv_link{
 
   width:100%
+}
+
+#cv_link:hover{
+
+  color:green
+
 }
 
 
