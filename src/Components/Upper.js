@@ -22,9 +22,6 @@ const Upper = (props) => {
             */}    
 
 
-              
-
-
             <div 
                   id="floating_profile" 
                   className="inner_conainer_profile" 
