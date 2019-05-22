@@ -3,7 +3,7 @@ import articledata from '../Data/ArticleData'
 import CustomCard2 from './CustomCard2';
 
 
-const Articles = () => {
+const Articles = (props) => {
         return ( 
 
 
@@ -13,7 +13,7 @@ const Articles = () => {
                 {
                         articledata.map(article=>{
 
-                                return <CustomCard2 article={article}/>
+                                return <CustomCard2 check1={props.check1} article={article}/>
 
                         })
 

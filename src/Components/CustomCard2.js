@@ -3,7 +3,22 @@ import React from 'react';
 const CustomCard2 = (props) => {
         return (
 
-                <div className="custom_card2">
+                <div className=
+                
+                
+                {props.check1===true?
+                      
+                
+                        "custom_card2 custom_darktheme"  
+                               
+                         :
+                         
+                          "custom_card2"
+                   
+                         }
+                
+                
+                >
                        
 
                         <img src={props.article.image}/>

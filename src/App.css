@@ -39,16 +39,7 @@
           cursor: pointer;
         }
       
-        /* unvisited link */
-        a:link {
-        color: white;
-          }
-          
-          /* visited link */
-          a:visited {
-        color: white;
-          }
-          
+
           /* mouse over link */
           a:hover {
         background: -webkit-linear-gradient(74deg, rgba(35, 0, 90, 0.5) 0%, rgba(255, 103, 136, 0.493) 100%) ;
@@ -58,10 +49,7 @@
         
           }
           
-          /* selected link */
-          a:active {
-        color: grey;
-          }
+      
       
       /*------General----------*/
       
@@ -225,6 +213,14 @@ clip-path: circle(41.6% at 58% 64%);
             padding: 5px;
             margin: 5px
       }
+
+.desc_darktheme{
+
+  color:white
+
+}
+
+
       
       .circle {
             background-image:  url('assets/mypic.png');
@@ -255,8 +251,8 @@ clip-path: circle(41.6% at 58% 64%);
           }
       
       .module {
-        background:black;
-        color: white;
+        background:rgb(255, 255, 255);
+        color: black;
         padding: 0.3rem;
         width: 100%;
         position: relative;
@@ -424,8 +420,25 @@ clip-path: circle(41.6% at 58% 64%);
 
   .secondary_text{
 
-    color: black
+    /* background: linear-gradient(to right, #11998e, #ef389d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
   }
+
+
+  .secondary_text_darktheme{
+
+   background: linear-gradient(to right, #11998e, #ef389d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+
+  }
+
 
 
 
@@ -472,7 +485,7 @@ clip-path: circle(41.6% at 58% 64%);
         } 
         .module-border-wrap {
       
-          width: 100%;
+          width: 80%;
       
         }
       } 
@@ -486,7 +499,7 @@ clip-path: circle(41.6% at 58% 64%);
         } 
         .module-border-wrap {
       
-          width: 100%;
+          width: 60%;
       
         }
       } 
@@ -501,7 +514,7 @@ clip-path: circle(41.6% at 58% 64%);
         } 
         .module-border-wrap {
       
-          width: 80%;
+          width: 50%;
       
         }
 
@@ -629,7 +642,7 @@ clip-path: circle(41.6% at 58% 64%);
     padding: 5px;
     margin: 5px;
     /* box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,.3); */
-    box-shadow: 0rem 0.5rem 1rem rgba(130, 41, 41, 0.12);
+    box-shadow: 0rem 0.5rem 1rem rgba(255, 0, 93, 0.205);
     background-color: #fff;
     border-radius: 0.3rem;
     transition: all .2s ease-in-out;
@@ -677,7 +690,33 @@ clip-path: circle(41.6% at 58% 64%);
     width: 300px;
     height: 150px;
     object-fit: scale-down;
+ 
   }
+
+  .custom_card:hover{
+
+
+      /* box-shadow:  0 10px 20px rgba(255, 0, 94, 0.28), 0 1rem 2rem rgba(255, 0, 93, 0.199); */
+      box-shadow: none;
+      transform: scale(1);
+      cursor: pointer;
+  
+
+  }
+
+
+  .custom_card2:hover{
+
+
+    /* box-shadow:  0 10px 20px rgba(255, 0, 94, 0.28), 0 1rem 2rem rgba(255, 0, 93, 0.199); */
+    box-shadow: none;
+    transform: scale(1);
+    cursor: pointer;
+
+
+}
+
+
 
   .bottom_links{
 
@@ -749,7 +788,7 @@ clip-path: circle(41.6% at 58% 64%);
     text-align: center;
     padding: 5px;
     margin: 5px;
-    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,.3);
+    box-shadow: 0rem 0.5rem 1rem rgba(255, 0, 93, 0.205);
     background-color: #fff;
     border-radius: 0.3rem;
     transition: all .2s ease-in-out;
@@ -770,12 +809,6 @@ clip-path: circle(41.6% at 58% 64%);
   width:100%
 }
 
-#cv_link:hover{
-
-  color:green
-
-}
-
 
 
 /* #fab_button{
@@ -791,7 +824,7 @@ clip-path: circle(41.6% at 58% 64%);
 
 a span span{
 
-  color :black;
+  color :rgb(168, 76, 0);
   font-family: 'Open Sans';
   letter-spacing: 2px
 }
@@ -854,7 +887,7 @@ label {
 	text-indent: -9999px;
   width: 50px;
   height: 25px;
-	background: grey;
+	background: rgb(0, 163, 136);
 	display: block;
 	border-radius: 100px;
   position: relative;
@@ -877,7 +910,7 @@ label:after {
 }
 
 input:checked + label {
-	background: #0b0025;
+	background: #6a2aff;
 }
 
 input:checked + label:after {
@@ -895,4 +928,25 @@ path{
   background: linear-gradient(90deg, rgba(228,19,139,1) 0%, rgba(121,9,120,1) 35%, rgba(0,146,255,1) 100%);
 
 }
+
+
 /*--------------------------------------*/
+
+.custom_darktheme{
+
+
+  background: #020202
+}
+
+
+
+.custom_darktheme img{
+
+-webkit-filter:brightness(50%);
+filter:brightness(50%);
+}
+.custom_darktheme h3{
+
+
+  color:#ffffff80
+}

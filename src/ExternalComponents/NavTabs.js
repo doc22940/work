@@ -32,6 +32,11 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.paper,
  
   },
+  indicator:{
+   backgroundColor:"#f5005763"
+
+   //original : #f50057
+  }
 });
 
 class NavTabs extends React.Component {
@@ -49,9 +54,48 @@ class NavTabs extends React.Component {
 
     return (
       <NoSsr>
-        <div className={classes.root} style={{ color:"black"}}>
-          <AppBar position="static"  style={{background:"white"}}>
-            <Tabs variant="fullWidth" value={value} onChange={this.handleChange} >
+        <div className={classes.root} style=
+                  {
+                    this.props.check1===true?
+        
+                    {
+                      background:"#020202", 
+                      color:"white",
+              
+                      border: "1px #0c0c0c solid"
+                    
+                    
+                    }
+        
+                    :
+        
+                    {background:"white" }
+        
+                  }
+                
+        
+        >
+       
+       
+          <AppBar position="static"  style=
+          
+          {
+            this.props.check1===true?
+
+            {background:"#020202", color:"white" }
+
+            :
+
+            {background:"white" }
+
+          }
+        
+          >
+            <Tabs variant="fullWidth" value={value} onChange={this.handleChange} classes={
+
+             this.props.check1===true? {indicator:classes.indicator}:{}
+
+            } >
               <LinkTab label="Projects" href="page1" />
               <LinkTab label="Articles" href="page2" />
               <LinkTab label="Code Snippets" href="page3" />
@@ -60,9 +104,9 @@ class NavTabs extends React.Component {
 
           {value === 0 && 
           
-          <TabContainer style={{ color:"black"}} >
+          <TabContainer style={{ color:"#020202"}} >
 
-                <Projects/>
+                <Projects check1={this.props.check1}/>
 
           </TabContainer>}
 
@@ -71,7 +115,7 @@ class NavTabs extends React.Component {
           
           <TabContainer>
                   
-                   <Articles/>
+                   <Articles check1={this.props.check1}/>
         
           </TabContainer>
         

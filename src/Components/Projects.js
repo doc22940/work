@@ -4,7 +4,7 @@ import CustomCard from './CustomCard';
 import data from '../Data/ProjectData'
 
 
-const Projects = () => {
+const Projects = (props) => {
         return ( 
 
 
@@ -13,7 +13,7 @@ const Projects = () => {
                 {
                         data.map(project=>{
 
-                                return <CustomCard project={project}/>
+                                return <CustomCard  check1={props.check1} project={project} />
 
                         })
 

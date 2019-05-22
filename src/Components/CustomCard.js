@@ -3,7 +3,24 @@ import React from 'react';
 const CustomCard = (props) => {
         return (
 
-                <div className="custom_card">
+                <div className=
+                
+                {props.check1===true?
+                      
+                
+                        "custom_card custom_darktheme"  
+                               
+                         :
+                         
+                          "custom_card"
+                   
+                         }
+                
+                
+                
+                
+                
+                >
                        
 
                         <img src={props.project.image}/>

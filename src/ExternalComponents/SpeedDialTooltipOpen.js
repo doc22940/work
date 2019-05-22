@@ -21,7 +21,7 @@ import classNames from 'classnames';
 
 
 const styles = theme => ({
-  root: {
+  root: { 
   //  backgroundColor:'green',
  
 
@@ -42,7 +42,7 @@ const styles = theme => ({
     background:' -webkit-linear-gradient(74deg, rgba(35, 0, 90, 0.5) 0%, rgba(255, 103, 136, 0.493) 100%)' ,
 
   
-    boxShadow:'1px -7px 20px -1px  rgba(215, 55, 255, 0.2), 1px -15px 20px 8px rgba(144, 144, 144, 0.14), -1px -11px 20px 1px rgba(255, 196, 196, 0.12)'
+    boxShadow:'1px -7px 20px -1px rgba(215, 55, 255, 0), 1px -15px 20px 8px rgba(144, 144, 144, 0.1), -1px -11px 20px 1px rgba(255, 196, 196, 0.12)'
 
   }
 

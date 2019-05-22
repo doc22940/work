@@ -2,12 +2,17 @@ import React from 'react';
 
 
 
-const Upper = () => {
+const Upper = (props) => {
         return ( 
 
 
             <div id="upper_profile">
-<input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+
+
+
+<input type="checkbox" name="check1" id="switch"  checked={props.check1}  onChange={props.handleMe}/>
+
+<label for="switch">Toggle</label>
 
               {/*
                         <div id="bg-bg"></div>
@@ -17,29 +22,58 @@ const Upper = () => {
             */}    
 
 
-                  {/*
-
-                              <div id="header_area_profile">
-
-                              <SpeedDialTooltipOpen/>
-
-                              </div>
-
-                  */}
+              
 
 
-
-
-            <div id="floating_profile" className="inner_conainer_profile">
+            <div 
+                  id="floating_profile" 
+                  className="inner_conainer_profile" 
+                  style={props.check1===true?{
+                      
+                        background:"#020202"
+                        
+                        
+                  }:{}}
+                  
+            >
 
 
 
                   <div className="circle ">  </div>
 
                   <div className="float_item_profile "> <h1 className="main_text">Ammar Halees</h1></div>
-                  <div className="float_item_profile "> <h3 className="secondary_text">Front-end Engineer</h3> </div>
+                  <div className="float_item_profile "> <h3 className=
+                
+                {props.check1===true?
+                      
+                
+                 "secondary_text_darktheme"  
+                        
+                  :
+                  
+                   "secondary_text"
+            
+                  }
+                  
+                  >Front-end Engineer</h3> </div>
 
-                  <div id="description_profilepage" className="float_item_profile" >
+                  <div id="description_profilepage" className=
+                  
+                  {props.check1===true?
+                      
+                
+                        "float_item_profile desc_darktheme"  
+                               
+                         :
+                         
+                          "float_item_profile"
+                   
+                         }
+                  
+                  
+                 
+                  
+                  >
                         
                         Front-end Dev. @erabia <br/>React, Redux, Node. <br/> Based in Jordan
 
@@ -51,7 +85,19 @@ const Upper = () => {
                         <a id="cv_link" target="_blank" href="https://drive.google.com/file/d/1m7lDK0hlm5TvM0LXbigdfF4c8cyJMGmY/view?usp=sharing">
 
 
-                        <button className="module" >CV</button>
+                        <button className="module"
+                        
+                        style={props.check1===true?{
+                      
+                              background:"black",
+                              color:"white"
+                              
+                              
+                        }:{}}
+                        
+                        
+                        
+                        >CV</button>
 
 
                         </a>
