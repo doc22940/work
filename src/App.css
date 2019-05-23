@@ -114,11 +114,7 @@
             background-repeat: no-repeat;
             background-position: center center;
             object-fit: cover;
-            /* -webkit-clip-path: polygon(0 0, 60% 0, 10% 11%, 0 100%);
-            clip-path: polygon(0 0, 60% 0, 10% 11%, 0 100%); */
-            -webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 43% 22%, 20% 42%, 15% 75%, 0 97%, 0% 43%, 0 0);
-            clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 43% 22%, 20% 42%, 15% 75%, 0 97%, 0% 43%, 0 0);
-            
+
             -webkit-filter:brightness(50%);
             filter:brightness(50%);
             /* -webkit-filter:blur(3px);
@@ -243,7 +239,8 @@ clip-path: circle(41.6% at 58% 64%);
       
           
       .module-border-wrap {
-        background: linear-gradient(to right, red, purple);
+        /* background: linear-gradient(to right, red, purple); */
+        background: linear-gradient(to right, #250098c2, #bf006166);
         padding: 0.2rem;
         width: 100%;
         margin: auto
@@ -270,7 +267,7 @@ clip-path: circle(41.6% at 58% 64%);
       
       .smaller_text_profile{
       
-        color: rgba(226, 226, 226, 0.411)
+        color:#c1c1c133
       
       }
       
@@ -411,7 +408,10 @@ clip-path: circle(41.6% at 58% 64%);
 
   .main_text{
 
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 100;
+
+
     background: linear-gradient(to right, red, purple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -432,7 +432,9 @@ clip-path: circle(41.6% at 58% 64%);
 
   .secondary_text_darktheme{
 
-   background: linear-gradient(to right, #11998e, #ef389d);
+   background: linear-gradient(to right, #a98400, #ef389d);
+   font-weight: 100;
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
 
@@ -649,7 +651,7 @@ clip-path: circle(41.6% at 58% 64%);
     transform: scale(0.95);
     margin: auto;
 
-    height: 350px;
+    height: 330px;
 
     border-radius: 20px;
     margin-bottom: 15px;
@@ -688,8 +690,9 @@ clip-path: circle(41.6% at 58% 64%);
   .custom_card img,.custom_card2 img{
 
     width: 300px;
-    height: 150px;
+    height: 100px;
     object-fit: scale-down;
+    margin-top: 20px
  
   }
 
@@ -751,7 +754,7 @@ clip-path: circle(41.6% at 58% 64%);
 
   #bot_links{
 
-    background: -webkit-linear-gradient(74deg, rgba(35, 0, 90, 0.692) 0%, rgba(255, 103, 136, 0.664) 100%) ;
+    background:-webkit-linear-gradient(74deg, rgba(103, 5, 255, 0.692) 0%, rgb(255, 0, 55) 100%) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -808,6 +811,7 @@ clip-path: circle(41.6% at 58% 64%);
 
   width:100%
 }
+
 
 
 
@@ -887,7 +891,7 @@ label {
 	text-indent: -9999px;
   width: 50px;
   height: 25px;
-	background: rgb(0, 163, 136);
+	background: #3e4644;
 	display: block;
 	border-radius: 100px;
   position: relative;
@@ -910,7 +914,7 @@ label:after {
 }
 
 input:checked + label {
-	background: #6a2aff;
+	background: rgb(76, 217, 100);
 }
 
 input:checked + label:after {
@@ -939,11 +943,16 @@ path{
 }
 
 
+.custom_darktheme h1{
+
+  background: -webkit-linear-gradient(74deg, rgba(255, 255, 255, 0.61) 0%, rgb(195, 187, 199) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .custom_darktheme img{
 
--webkit-filter:brightness(50%);
-filter:brightness(50%);
+opacity: 0.3
 }
 .custom_darktheme h3{
 
@@ -954,14 +963,27 @@ filter:brightness(50%);
 
 .social_circle_link{
 
-width: 50px;
+width: 60px;
 display: inline-block;
 margin: 2px;
 border: 1px #7e7e7e solid;
 border-radius: 50px;
 padding: 0px;
 
+transition: all .2s ease-in-out;
+transform: scale(0.9);
+
 }
 
+.social_circle_link:hover{
+  transform: scale(1.2);
+  cursor: pointer;
 
+}
+button.module:hover{
+
+    color:black;
+
+
+}
 

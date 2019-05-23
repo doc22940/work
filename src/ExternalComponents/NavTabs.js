@@ -98,7 +98,7 @@ class NavTabs extends React.Component {
             } >
               <LinkTab label="Projects" href="page1" />
               <LinkTab label="Articles" href="page2" />
-              <LinkTab label="Code Snippets" href="page3" />
+              <LinkTab label="Snippets" href="page3" />
             </Tabs>
           </AppBar>
 

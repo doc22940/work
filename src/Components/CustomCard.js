@@ -22,8 +22,7 @@ const CustomCard = (props) => {
                 
                 >
                        
-
-                        <img src={props.project.image}/>
+                
 
                          <h1>
                                 {props.project.title}
@@ -33,6 +32,9 @@ const CustomCard = (props) => {
                         {props.project.description}
 
                         </h3>
+                                
+                        <img src={props.project.image}/>
+
                      
                 { /*            
                             <div id="techused">               
