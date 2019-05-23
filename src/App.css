@@ -109,20 +109,22 @@
       
               width: 100%;
               height: 100%;
-              background-image:  url('http://sclance.com/wallpapers/big-desktop-wallpaper/big-desktop-wallpaper_518721.jpg');
+              background:linear-gradient(to right, #dc018f, #00c8e8);
               background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
             object-fit: cover;
-
-            -webkit-filter:brightness(50%);
+  
             filter:brightness(50%);
             /* -webkit-filter:blur(3px);
             filter:blur(3px); */
-          
+              opacity: 0.5;
               position: absolute;
               z-index: -1
           }
+
+
+
           #bg-bg2{
       
             width: 100%;
@@ -230,7 +232,7 @@ clip-path: circle(41.6% at 58% 64%);
             -webkit-border-radius: 99em;
             -moz-border-radius: 99em;
             border-radius: 99em;
-            border: 2px solid #eee;
+            border: 1px solid #eee;
             box-shadow: 0 8px 10px rgba(117, 47, 47, 0.3);
             position: relative;
             z-index: 10000000000000; /* to avoid colliding with the sticky header*/
