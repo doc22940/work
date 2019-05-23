@@ -106,13 +106,13 @@ class App extends React.Component {
       <div id="bg-bg3"></div>*/}
     
     
-    
+
     
     
     <Upper handleMe={this.handleMe}  check1={this.state.check1} darkTheme={this.state.darkTheme}/>
     
-    
-    <Mid check1={this.state.check1}/>
+ {/* {   <Mid check1={this.state.check1}/>} */}
+
     
     
     <Lower check1={this.state.check1} />

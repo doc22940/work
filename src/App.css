@@ -473,7 +473,7 @@ clip-path: circle(41.6% at 58% 64%);
         } 
         .module-border-wrap {
       
-          width: 50%;
+          width: 40%;
       
         }
       
@@ -482,12 +482,12 @@ clip-path: circle(41.6% at 58% 64%);
       /* Small devices (portrait tablets and large phones, 600px and up) */
       @media only screen and (min-width: 600px) {
         .inner_conainer_profile{
-          width: 40%;  
+          width: 70%;  
       
         } 
         .module-border-wrap {
       
-          width: 80%;
+          width: 40%;
       
         }
       } 
@@ -496,12 +496,12 @@ clip-path: circle(41.6% at 58% 64%);
       @media only screen and (min-width: 768px) {
         
         .inner_conainer_profile{
-          width: 40%;  
+          width: 70%;  
       
         } 
         .module-border-wrap {
       
-          width: 60%;
+          width: 30%;
       
         }
       } 

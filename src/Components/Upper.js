@@ -1,4 +1,5 @@
 import React from 'react';
+import Mid from './Mid';
 
 
 
@@ -36,7 +37,7 @@ const Upper = (props) => {
 
 
 
-                  <div className="circle ">  </div>
+                  <div className="circle "><div id="bg-bg"></div>  </div>
 
                   <div className="float_item_profile "> <h1 className="main_text">Ammar Halees</h1></div>
                   <div className="float_item_profile "> <h3 className=
@@ -111,6 +112,10 @@ const Upper = (props) => {
             </div>
 
             
+
+            <Mid check1={props.check1}/>
+
+
 
       </div>
 
