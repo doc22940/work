@@ -6,7 +6,6 @@ import SpeedDial from '@material-ui/lab/SpeedDial';
 import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon';
 import SpeedDialAction from '@material-ui/lab/SpeedDialAction';
 
-import Link from '../assets/link.png';
 import MD from '../assets/md.png';
 import NEWIG from '../assets/newig.png';
 

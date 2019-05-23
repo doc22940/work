@@ -112,7 +112,7 @@ class App extends React.Component {
     <Upper handleMe={this.handleMe}  check1={this.state.check1} darkTheme={this.state.darkTheme}/>
     
     
-    <Mid/>
+    <Mid check1={this.state.check1}/>
     
     
     <Lower check1={this.state.check1} />

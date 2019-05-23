@@ -1,8 +1,9 @@
 import React from 'react';
 import SocialData from '../Data/SocialData';
+import SocialDataDark from '../Data/SocialDataDark';
 
 
-const Mid = () => {
+const Mid = (props) => {
         return ( 
 
 
@@ -10,7 +11,9 @@ const Mid = () => {
                               
                       {
 
-                        SocialData.map(media=>{
+                        (props.check1 ===true?SocialData:SocialDataDark)
+
+                        .map(media=>{
 
                                 return <a  target="_blank" href={media.link}>
 
