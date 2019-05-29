@@ -11,7 +11,7 @@ const ProjectData=[
                 techused:["JavaScript","React","Npm","Material UI","Others"],
                 linktosource:"https://github.com/AmmarHalees/reactshop",
                 linktodemo:"https://ammarhalees.github.io/reactshop/",
-                image:"https://opencollective-production.s3-us-west-1.amazonaws.com/b85da640-1bc2-11e7-a417-93a4b72c3fe6.png"
+                image:"http://www.welcomia.com/uploads/png/preview/png_shopping_store_5862.png"
 
 
 
@@ -26,7 +26,7 @@ const ProjectData=[
                 techused:["JavaScript","React","Npm","Material UI","Others"],
                 linktosource:"https://github.com/AmmarHalees/JStoJSONwebsite",
                 linktodemo:"https://ammarhalees.github.io/JStoJSONwebsite/",
-                image:"https://digitalworkshopcenter.com/wp-content/uploads/2018/02/JavaScript-Classes-at-Digital-Workshop-Center-1.png"
+                image:"https://static1.squarespace.com/static/54f4aa6be4b04c134f9001e2/t/5a8c662e71c10b0805e513e1/1519150646373/Two-Node-Icon.png"
 
 //https://imgur.com/jKmcOUg.png
 
