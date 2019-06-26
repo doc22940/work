@@ -9,8 +9,8 @@ const ProjectData=[
                 title:"React Shopping SPA",
                 description:"Light-weight, Fast, React E-Commerce SPA",
                 techused:["JavaScript","React","Npm","Material UI","Others"],
-                linktosource:"https://github.com/AmmarHalees/reactshop",
-                linktodemo:"https://ammarhalees.github.io/reactshop/",
+                linktosource:"https://github.com/AmmarHalees/reactecommerceshop",
+                linktodemo:"https://ammarhalees.github.io/reactecommerceshop/",
                 image:"http://www.welcomia.com/uploads/png/preview/png_shopping_store_5862.png"
 
 
