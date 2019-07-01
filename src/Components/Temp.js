@@ -41,7 +41,7 @@ const Upper = () => {
                   <div className="module-border-wrap float_item_profile">
                         
 
-                        <a id="cv_link" target="_blank" href="https://drive.google.com/file/d/1m7lDK0hlm5TvM0LXbigdfF4c8cyJMGmY/view?usp=sharing">
+                        <a id="cv_link" target="_blank" href="https://drive.google.com/file/d/1Edw6coP0-mtZAJfdQT6qzKkJZjozKUsD/view">
 
 
                         <button className="module" >CV</button>
