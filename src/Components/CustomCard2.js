@@ -9,11 +9,11 @@ const CustomCard2 = (props) => {
                 {props.check1===true?
                       
                 
-                        "custom_card2 custom_darktheme"  
+                        `${props.article.class==="custom_card3"?"custom_card3":"custom_card2"} custom_darktheme`  
                                
                          :
                          
-                          "custom_card2"
+                         `${props.article.class==="custom_card3"?"custom_card3":"custom_card2"}` 
                    
                          }
                 

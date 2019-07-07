@@ -661,7 +661,7 @@ clip-path: circle(41.6% at 58% 64%);
 
 
 
-  .custom_card h1,.custom_card2 h1{
+  .custom_card h1,.custom_card2 h1, .custom_card3 h1{
 
     padding: 5px;
     margin: 5px;
@@ -673,11 +673,11 @@ clip-path: circle(41.6% at 58% 64%);
     
   }
 
-  .custom_card2 h1{
+  .custom_card2 h1,.custom_card3 h1{
 
     height: 80px
   }
-  .custom_card h3,.custom_card2 h3 {
+  .custom_card h3,.custom_card2 h3 ,.custom_card3 h3{
 
     color: rgba(0, 0, 0, 0.64);
     padding: 5px;
@@ -700,9 +700,19 @@ clip-path: circle(41.6% at 58% 64%);
     width: 300px;
     height: 100px;
     object-fit: scale-down;
-    margin-top: 20px
+    /* margin-top: 20px */
  
   }
+
+  .custom_card3 img{
+
+    width: 100px;
+    height: auto;
+    object-fit: scale-down;
+    /* margin-top: 20px */
+ 
+  }
+
 
   .custom_card:hover{
 
@@ -727,6 +737,18 @@ clip-path: circle(41.6% at 58% 64%);
 
 }
 
+
+
+.custom_card3:hover{
+
+
+  /* box-shadow:  0 10px 20px rgba(255, 0, 94, 0.28), 0 1rem 2rem rgba(255, 0, 93, 0.199); */
+  box-shadow: none;
+  transform: scale(1);
+  cursor: pointer;
+
+
+}
 
 
   .bottom_links{
@@ -794,7 +816,7 @@ clip-path: circle(41.6% at 58% 64%);
 
     color: #303
   }
-  .custom_card2{
+  .custom_card2, .custom_card3 {
 
     text-align: center;
     padding: 5px;
@@ -812,6 +834,8 @@ clip-path: circle(41.6% at 58% 64%);
     margin-bottom: 15px;
   }
 
+
+  
 
 
 
