@@ -821,7 +821,8 @@ clip-path: circle(41.6% at 58% 64%);
     text-align: center;
     padding: 5px;
     margin: 5px;
-    box-shadow: 0rem 0.5rem 1rem rgba(255, 0, 93, 0.205);
+    
+    box-shadow: 0 0.5rem 1rem rgba(117, 84, 255, 0.205);
     background-color: #fff;
     border-radius: 0.3rem;
     transition: all .2s ease-in-out;
