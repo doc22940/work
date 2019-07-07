@@ -96,8 +96,8 @@ class NavTabs extends React.Component {
              this.props.check1===true? {indicator:classes.indicator}:{}
 
             } >
-              <LinkTab label="Projects" href="page1" />
-              <LinkTab label="Articles" href="page2" />
+              <LinkTab label="Articles" href="page1" />
+              <LinkTab label="Projects" href="page2" />
               <LinkTab label="Snippets" href="page3" />
             </Tabs>
           </AppBar>
@@ -106,7 +106,7 @@ class NavTabs extends React.Component {
           
           <TabContainer style={{ color:"#020202"}} >
 
-                <Projects check1={this.props.check1}/>
+                   <Articles check1={this.props.check1}/>
 
           </TabContainer>}
 
@@ -115,8 +115,8 @@ class NavTabs extends React.Component {
           
           <TabContainer>
                   
-                   <Articles check1={this.props.check1}/>
-        
+                  <Projects check1={this.props.check1}/>
+
           </TabContainer>
         
         }

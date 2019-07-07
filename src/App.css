@@ -828,7 +828,7 @@ clip-path: circle(41.6% at 58% 64%);
     transform: scale(0.95);
     margin: auto;
 
-    height: 400px;
+    height: auto;
 
     border-radius: 20px;
     margin-bottom: 15px;
@@ -877,7 +877,9 @@ a span span{
 
 width: 100%;
 
-height:auto
+max-height:200px;
+
+object-fit:  cover
 }
 
 #midlower_profile_2{
