@@ -79,13 +79,25 @@ const ArticleData=[
                 techused:["JavaScript","React","Npm","git"],
                 linktoarticle:"https://medium.com/@haleesammar/design-and-implement-cascading-dynamic-filters-with-react-part-i-filter-design-fundamentals-dd71dcbc5290",
                 image:"https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2017/06/how-to-fix-eliminate-render-blocking-javascript-and-css-on-wordpress.jpg",
-                space:true
-,
+                space:true,
                 class:"custom_card3"
 
-   }
+        }
+
+        ,
 
 
+        {
+
+                title:"Visual Guide to JavaScript Execution....",
+                description:"Using the Chrome Dev. tools...",
+                techused:["JavaScript","React","Npm","git"],
+                linktoarticle:"https://medium.com/@haleesammar/visual-guide-to-javascript-execution-context-memory-allocation-and-hoisting-d9640928bfea",
+                image:"https://miro.medium.com/max/1494/1*S8In8LX3bwBJSjTjdOcJbQ.jpeg",
+                space:true,
+                class:"custom_card3"
+
+        }
 
 
 ]

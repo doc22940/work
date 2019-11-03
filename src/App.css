@@ -6,7 +6,6 @@
         box-sizing: border-box;
         font-family: 'Quicksand', sans-serif;
         color: white;
-        background: black;
         }
 
         html, body{ 
@@ -801,7 +800,7 @@ clip-path: circle(41.6% at 58% 64%);
 
   cursor: pointer;
 
-  background: -webkit-linear-gradient(74deg, rgb(0, 50, 63) 0%, rgba(218, 3, 50, 0.918) 100%) ;
+  background: -webkit-linear-gradient(74deg, rgb(12, 133, 163) 0%, rgba(230, 61, 98, 0.918) 100%) ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -846,6 +845,10 @@ clip-path: circle(41.6% at 58% 64%);
   width:100%
 }
 
+#cv_link:hover{
+
+  color:"black"
+}
 
 
 
@@ -1020,6 +1023,12 @@ button.module:hover{
 
     color:black;
 
+
+}
+
+#mybutton_cv:hover{
+
+  color:black
 
 }
 

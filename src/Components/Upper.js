@@ -81,21 +81,41 @@ const Upper = (props) => {
 
                   </div>
 
-                  <div className="module-border-wrap float_item_profile">
+                  <div >
                         
 
-                        <a id="cv_link" target="_blank" href="https://drive.google.com/file/d/1Edw6coP0-mtZAJfdQT6qzKkJZjozKUsD/view">
 
 
-                        <button className="module"
+                        <a 
+                        // id="cv_link"
+                         target="_blank" 
+                         href="https://drive.google.com/file/d/1Edw6coP0-mtZAJfdQT6qzKkJZjozKUsD/view"
+                         >
+
+
+                        <button 
+                        style={{
+
+                                    border:"1px 7e7e7e solid",
+                                    color:"#f50087",
+                                    padding:'15px',
+                                    borderRadius:"5px",
+                                    width:"20%",
+                                    fontSize:"1.2rem",
+
+                        }}
+
+                        // className="module"
+
+                        // id="mybutton_cv"
                         
-                        style={props.check1===true?{
+                        // style={props.check1===true?{
                       
-                              background:"black",
-                              color:"white"
+                        //       background:"black",
+                        //       color:"white"
                               
                               
-                        }:{}}
+                        // }:{}}
                         
                         
                         
