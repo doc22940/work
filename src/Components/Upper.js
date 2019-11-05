@@ -89,7 +89,7 @@ const Upper = (props) => {
                         <a 
                         // id="cv_link"
                          target="_blank" 
-                         href="https://drive.google.com/file/d/1Edw6coP0-mtZAJfdQT6qzKkJZjozKUsD/view"
+                         href="https://drive.google.com/file/d/1Edw6coP0-mtZAJfdQT6qzKkJZjozKUsD/view?usp=sharing"
                          >
 
 
