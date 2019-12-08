@@ -4,13 +4,20 @@ import CustomCard from './CustomCard';
 import data from '../Data/ProjectData'
 
 
-const Projects = (props) => {
+const styleLight ={color:"black",fontSize:"bold"} 
+const styleDark ={color:"white",fontSize:"bold"} 
+
+
+const Projects = ({check1}) => {
         return ( 
 
 <div style={{textAlign:"center"}}>
 
-<div style={{paddingBottom:"10px",color:"rgba(0, 0, 0, 0.64)",fontStyle:"italic"}}>
-<span style={{color:"black",fontSize:"bold"}}>{`*Please Note* `}</span>These are old projects are somewhat old
+<div style={{paddingBottom:"10px",color:"rgba(0, 0, 0, 0.64)"}}>
+
+<span style={check1 === true? styleDark:{...styleLight,fontStyle:"italic"}}>{`*Please Note* `}</span>
+<span style={check1 === true? styleDark:styleLight}>These are old projects are somewhat old</span>
+        
 
 </div>
 
@@ -21,7 +28,7 @@ const Projects = (props) => {
                 {
                         data.map(project=>{
 
-                                return <CustomCard  check1={props.check1} project={project} />
+                                return <CustomCard key={project.key}  check1={check1} project={project} />
 
                         })
 

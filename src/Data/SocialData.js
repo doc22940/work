@@ -12,7 +12,9 @@ const SocialData=[
 
                 title:"LinkedIn",
                 link:"https://www.linkedin.com/in/ammarhalees/",
-                image: LNL
+                image: LNL,
+                key:Math.random()*1000000
+
 
 
         }
@@ -24,7 +26,9 @@ const SocialData=[
 
                 title:"GitHub",
                 link:"https://github.com/AmmarHalees",
-                image: GHL
+                image: GHL,
+                                key:Math.random()*1000000
+
 
 
         }
@@ -37,7 +41,9 @@ const SocialData=[
 
                 title:"Instagram",
                 link:"https://www.instagram.com/ammarhalees",
-                image: IGL
+                image: IGL,
+                                key:Math.random()*1000000
+
 
 
         }
@@ -50,7 +56,9 @@ const SocialData=[
 
                 title:"Medium",
                 link:"https://medium.com/@haleesammar",
-                image: MDL
+                image: MDL,
+                                key:Math.random()*1000000
+
 
 
         }
@@ -63,7 +71,9 @@ const SocialData=[
 
                 title:"YouTube",
                 link:"https://www.youtube.com/channel/UCugfvz9Aoq00NahbwQTki8w?view_as=subscriber",
-                image: YTL
+                image: YTL,
+                                key:Math.random()*1000000
+
 
 
         }
@@ -76,7 +86,9 @@ const SocialData=[
 
                 title:"Twitter",
                 link:"https://twitter.com/ammarhalees",
-                image: TWL
+                image: TWL,
+                                key:Math.random()*1000000
+
 
 
         }

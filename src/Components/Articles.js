@@ -11,7 +11,7 @@ const Articles = ({ check1 }) => {
                         {
                                 articledata.map(article => {
 
-                                        return <CustomCard2 check1={check1} article={article} />
+                                        return <CustomCard2 key={article.key} check1={check1} article={article}  word = "Article"/>
 
                                 })
 

@@ -11,7 +11,7 @@ const Upper = (props) => {
 
                   <input type="checkbox" name="check1" id="switch" checked={props.check1} onChange={props.handleMe} />
 
-                  <label for="switch">Toggle</label>
+                  <label htmlFor="switch">Toggle</label>
 
                   <div id="floating_profile" className="inner_conainer_profile" style={props.check1 === true ? { background: "#020202" } : {}}   >
 
@@ -29,7 +29,7 @@ const Upper = (props) => {
 
                         <div id="description_profilepage" className={props.check1 === true ? "float_item_profile desc_darktheme" : "float_item_profile"}  >
 
-                              Front-end Dev. @erabia <br/> React, Redux, Node. <br/> Based in Jordan
+                              Front-end Dev. @erabia <br/> React, ES6, Node. <br/> Based in Jordan <br/> B.E.E.
 
                         </div>
 

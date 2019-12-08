@@ -129,7 +129,7 @@ class NavTabs extends React.Component {
           <TabContainer>
 
 
-              <UniversityProjects/>
+              <UniversityProjects check1={this.props.check1}/>
 
           </TabContainer>}
 

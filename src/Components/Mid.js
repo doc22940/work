@@ -15,7 +15,7 @@ const Mid = (props) => {
 
                         .map(media=>{
 
-                                return <a  target="_blank" href={media.link}>
+                                return <a key={media.key}  target="_blank" href={media.link}>
 
 
                                         <img className={`social_circle_link ${media.title}`} src={media.image} />
