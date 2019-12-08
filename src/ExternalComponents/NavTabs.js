@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import CodeSnippets from '../Components/CodeSnippets';
 import Articles from '../Components/Articles';
 import Projects from '../Components/Projects';
+import UniversityProjects from '../Components/UniversityProjects';
 
 function TabContainer(props) {
   return (
@@ -98,7 +99,7 @@ class NavTabs extends React.Component {
             } >
               <LinkTab label="Articles" href="page1" />
               <LinkTab label="Projects" href="page2" />
-              {/* <LinkTab label="Snippets" href="page3" /> */}
+              <LinkTab label="Other" href="page3" />
             </Tabs>
           </AppBar>
 
@@ -127,7 +128,8 @@ class NavTabs extends React.Component {
           
           <TabContainer>
 
-                  <CodeSnippets/>
+
+              <UniversityProjects/>
 
           </TabContainer>}
 

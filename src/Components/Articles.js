@@ -3,27 +3,25 @@ import articledata from '../Data/ArticleData'
 import CustomCard2 from './CustomCard2';
 
 
-const Articles = (props) => {
-        return ( 
+const Articles = ({ check1 }) => {
+        return (
 
-
-           
                 <div id="lower_profile_3" >
 
-                {
-                        articledata.map(article=>{
+                        {
+                                articledata.map(article => {
 
-                                return <CustomCard2 check1={props.check1} article={article}/>
+                                        return <CustomCard2 check1={check1} article={article} />
 
-                        })
+                                })
 
-                }
-                    
+                        }
+
 
                 </div>
 
 
-         );
+        );
 }
- 
+
 export default Articles;
