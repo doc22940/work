@@ -118,7 +118,7 @@ class App extends React.Component {
     <Lower check1={this.state.check1} />
     
     
-    {/* <SpeedDialTooltipOpen check1={this.state.check1} darkTheme={this.state.darkTheme}/> */}
+    <SpeedDialTooltipOpen check1={this.state.check1} darkTheme={this.state.darkTheme}/>
     
     
     

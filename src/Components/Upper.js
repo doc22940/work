@@ -3,6 +3,7 @@ import Mid from './Mid';
 
 
 
+
 const Upper = (props) => {
       return (
 
@@ -29,21 +30,25 @@ const Upper = (props) => {
 
                         <div id="description_profilepage" className={props.check1 === true ? "float_item_profile desc_darktheme" : "float_item_profile"}  >
 
-                              Software Dev. @erabia <br/> React, ES6, Node. <br/> Based in Jordan <br/> B.E.E.
+                              Software Dev. @erabia <br /> React, ES6, Node. <br /> Based in Jordan <br /> B.E.E.
 
                         </div>
+{/* 
+                        <div>
 
-                        <div >
+                              <Tooltip title="Contact me for my latest CV">
+                                    <a target="_blank" href="https://drive.google.com/file/d/1Edw6coP0-mtZAJfdQT6qzKkJZjozKUsD/view?usp=sharing"  >
 
-                              <a target="_blank" href="https://drive.google.com/file/d/1Edw6coP0-mtZAJfdQT6qzKkJZjozKUsD/view?usp=sharing"  >
+                                          <button id="cv_button" style={{ border: "1px 7e7e7e solid", color: "#f50087", padding: '15px', borderRadius: "5px", width: "20%", fontSize: "1.2rem", }}  >CV</button>
 
-                                    <button id="cv_button"  style={{ border: "1px 7e7e7e solid",  color: "#f50087", padding: '15px', borderRadius: "5px", width: "20%",  fontSize: "1.2rem",  }}  >CV</button>
+                                    </a>
+                              </Tooltip>
 
-                              </a>
-                        </div>
+
+                        </div> */}
 
                   </div>
- 
+
 
                   <Mid check1={props.check1} />
 
