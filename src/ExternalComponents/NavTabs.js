@@ -97,7 +97,7 @@ class NavTabs extends React.Component {
              this.props.check1===true? {indicator:classes.indicator}:{}
 
             } >
-              <LinkTab label="Articles" href="page1" />
+              <LinkTab label="Blog" href="page1" />
               <LinkTab label="Projects" href="page2" />
               <LinkTab label="Other" href="page3" />
             </Tabs>
