@@ -13,7 +13,7 @@ class App extends React.Component {
     this.state = { 
 
       check1:false,
-
+      test:false,
       containerStyle:
       {
         backgroundColor:"white"
