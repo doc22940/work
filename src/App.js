@@ -4,6 +4,7 @@ import Upper from './Components/Upper';
 import Mid from './Components/Mid';
 import Lower from './Components/Lower';
 import SpeedDialTooltipOpen from './ExternalComponents/SpeedDialTooltipOpen';
+import MetaTags from 'react-meta-tags';
 
 
 
@@ -106,7 +107,12 @@ class App extends React.Component {
       <div id="bg-bg3"></div>*/}
     
     
-
+    <MetaTags>
+            <title>Ammar Halees | Work</title>
+            <meta name="description" content="Some description." />
+            {/* <meta property="og:title" content="MyApp" /> */}
+            {/* <meta property="og:image" content="path/to/image.jpg" /> */}
+          </MetaTags>
     
     
     <Upper handleMe={this.handleMe}  check1={this.state.check1} darkTheme={this.state.darkTheme}/>
