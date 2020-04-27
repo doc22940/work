@@ -31,12 +31,18 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
- 
-  },
-  indicator:{
-   backgroundColor:"#f5005763"
 
-   //original : #f50057
+  },
+
+  flexContainer	:{
+
+    background:"red"
+
+  },
+  indicator: {
+    backgroundColor: "#f5005763"
+
+    //original : #f50057
   }
 });
 
@@ -56,82 +62,82 @@ class NavTabs extends React.Component {
     return (
       <NoSsr>
         <div className={classes.root} style=
-                  {
-                    this.props.check1===true?
-        
-                    {
-                      background:"#020202", 
-                      color:"white",
-              
-                      border: "1px #0c0c0c solid"
-                    
-                    
-                    }
-        
-                    :
-        
-                    {background:"white" }
-        
-                  }
-                
-        
-        >
-       
-       
-          <AppBar position="static"  style=
-          
           {
-            this.props.check1===true?
+            this.props.check1 === true ?
 
-            {background:"#020202", color:"white" }
+              {
+                background: "#020202",
+                color: "white",
 
-            :
+                border: "1px #0c0c0c solid"
 
-            {background:"white" }
+
+              }
+
+              :
+
+              { background: "white" }
 
           }
-        
+
+
+        >
+
+
+          <AppBar position="static" style=
+
+            {
+              this.props.check1 === true ?
+
+                { background: "#020202", color: "white" }
+
+                :
+
+                { background: "white" }
+
+            }
+
           >
             <Tabs variant="fullWidth" value={value} onChange={this.handleChange} classes={
 
-             this.props.check1===true? {indicator:classes.indicator}:{}
+              this.props.check1 === true ? { indicator: classes.indicator } : {}
 
-            } >
-              <LinkTab style={{padding:"20px"}} label="Blog" href="page1" />
-              <LinkTab style={{padding:"20px"}} label="Projects" href="page2" />
-              <LinkTab style={{padding:"20px"}} label="Other" href="page3" />
+            }  style={{boxShadow:"none"}}>
+              <LinkTab style={{ padding: "20px" }} label="Blog" href="page1" />
+              <LinkTab style={{ padding: "20px" }} label="Projects" href="page2" />
+              <LinkTab style={{ padding: "20px" }} label="Other" href="page3" />
             </Tabs>
           </AppBar>
 
-          {value === 0 && 
-          
-          <TabContainer style={{ color:"#020202"}} >
+          {value === 0 &&
 
-                   <Articles check1={this.props.check1}/>
+            <TabContainer style={{ color: "#020202" }} >
 
-          </TabContainer>}
+              <Articles check1={this.props.check1} />
 
-
-          {value === 1 && 
-          
-          <TabContainer>
-                  
-                  <Projects check1={this.props.check1}/>
-
-          </TabContainer>
-        
-        }
+            </TabContainer>}
 
 
-          {value === 2 && 
-          
-          
-          <TabContainer>
+          {value === 1 &&
+
+            <TabContainer>
+
+              <Projects check1={this.props.check1} />
+
+            </TabContainer>
+
+          }
 
 
-              <UniversityProjects check1={this.props.check1}/>
+          {value === 2 &&
 
-          </TabContainer>}
+
+            <TabContainer>
+
+
+              <UniversityProjects check1={this.props.check1} />
+
+            </TabContainer>}
 
         </div>
       </NoSsr>
