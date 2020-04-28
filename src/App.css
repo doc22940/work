@@ -464,107 +464,6 @@ clip-path: circle(41.6% at 58% 64%);
   /*--------------*/
 
 
-      /*-----Media Queries------*/
-      
-      /* Extra small devices (phones, 600px and down) */
-      @media only screen and (max-width: 600px) {
-      
-        .inner_conainer_profile{
-          width: 90%;  
-      
-        } 
-        .module-border-wrap {
-      
-          width: 40%;
-      
-        }
-      
-      } 
-      
-      /* Small devices (portrait tablets and large phones, 600px and up) */
-      @media only screen and (min-width: 600px) {
-        .inner_conainer_profile{
-          width: 70%;  
-      
-        } 
-        .module-border-wrap {
-      
-          width: 40%;
-      
-        }
-      } 
-      
-      /* Medium devices (landscape tablets, 768px and up) */
-      @media only screen and (min-width: 768px) {
-        
-        .inner_conainer_profile{
-          width: 70%;  
-      
-        } 
-        .module-border-wrap {
-      
-          width: 30%;
-      
-        }
-      } 
-      
-      /* Large devices (laptops/desktops, 992px and up) */
-      @media only screen and (min-width: 992px) {
-      
-        
-        .inner_conainer_profile{
-          width: 40%;  
-      
-        } 
-        .module-border-wrap {
-      
-          width: 50%;
-      
-        }
-
-        #new_lower{
-
-          width: 80%;
-          margin:auto;
-
-        }
-      
-      } 
-      
-      /* Extra large devices (large laptops and desktops, 1200px and up) */
-      @media only screen and (min-width: 1200px) {
-        
-        .inner_conainer_profile{
-          width: 40%;  
-      
-        } 
-        .module-border-wrap {
-      
-          width: 30%;
-      
-        }
-      
-        #header_area_profile{
-      
-            
-          display: grid;
-          grid-template-columns: 0.1fr  1fr 0.1fr;
-          justify-items:center;
-          align-items: center
-        }
-
-        #new_lower{
-
-          width: 60%;
-          margin:auto;
-        }
-        
-      }
-
-
-          /*----------------*/
-
-
 
   .overlay_profile{
 
@@ -1002,7 +901,7 @@ opacity: 1
 
 .social_circle_link{
 
-width: 70px;
+width: 55px;
 display: inline-block;
 margin: 2px;
 border: 1px #7e7e7e9f solid;
@@ -1033,3 +932,109 @@ button.module:hover{
 
 }
 
+
+
+      /*-----Media Queries------*/
+      
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+      
+        .inner_conainer_profile{
+          width: 90%;  
+      
+        } 
+        .module-border-wrap {
+      
+          width: 40%;
+      
+        }
+      
+      } 
+      
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        .inner_conainer_profile{
+          width: 70%;  
+      
+        } 
+        .module-border-wrap {
+      
+          width: 40%;
+      
+        }
+      } 
+      
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        
+        .inner_conainer_profile{
+          width: 70%;  
+      
+        } 
+        .module-border-wrap {
+      
+          width: 30%;
+      
+        }
+      } 
+      
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+      
+        
+        .inner_conainer_profile{
+          width: 40%;  
+      
+        } 
+        .module-border-wrap {
+      
+          width: 50%;
+      
+        }
+
+        #new_lower{
+
+          width: 80%;
+          margin:auto;
+
+        }
+      
+      } 
+      
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        
+        .inner_conainer_profile{
+          width: 40%;  
+      
+        } 
+        .module-border-wrap {
+      
+          width: 30%;
+      
+        }
+      
+        #header_area_profile{
+      
+            
+          display: grid;
+          grid-template-columns: 0.1fr  1fr 0.1fr;
+          justify-items:center;
+          align-items: center
+        }
+
+        #new_lower{
+
+          width: 60%;
+          margin:auto;
+        }
+
+        .social_circle_link{
+
+          width: 70px;
+        }
+        
+      }
+
+
+          /*----------------*/
